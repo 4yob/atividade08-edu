@@ -31,15 +31,15 @@ body {
 }
 
 .orange {
-    background-color: #f9a826;
     width: 25rem;
     height: 25rem;
     top: 50%;
     right: 60%;
+    background: linear-gradient(to top, #f9c826, #ff5e00);
 }
 
 .red {
-    background-color: red;
+    background: linear-gradient(to top, #ff0000, #ff00aa);
     width: 22rem;
     height: 22rem;
     top: 30%;
@@ -47,7 +47,7 @@ body {
 }
 
 .purple {
-    background-color: rgb(140, 0, 255);
+    background: linear-gradient(to right, #9900ff, #2c005f);
     width: 15rem;
     height: 15rem;
     top: 20%;
@@ -55,7 +55,7 @@ body {
 }
 
 .cyan {
-    background-color: rgb(0, 225, 255);
+    background: linear-gradient(to left, rgb(0, 255, 255), rgb(0, 80, 80));
     width: 10rem;
     height: 10rem;
     top: 65%;
@@ -76,13 +76,14 @@ body {
 .aside {
     display: flex;
     flex-direction: column;
-    padding: 4rem;
+    width: 35%;
+    padding: 2.5rem;
     background: linear-gradient(to bottom, #ffffff 0%, rgb(202, 202, 202) 100%);
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
 
-.login-line {
+.title-aside {
     margin-top: 5rem;
 }
 
@@ -93,7 +94,7 @@ p {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 700;
 }
 
@@ -110,6 +111,11 @@ h1 {
     border: none;
 }
 
+.button-aside {
+    display: flex;
+    margin: 4rem 0 0 0;
+}
+
 button {
     background-color: #ffffff;
     border: none;
@@ -118,7 +124,6 @@ button {
     width: 10rem;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
-    margin-top: 3rem;
 }
 
 .icons {
@@ -145,9 +150,8 @@ button {
 .article {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 4rem;
-    background: linear-gradient(to bottom, #ffffff 0%, rgb(202, 202, 202) 100%);
+    padding: 2rem;
+    background: linear-gradient(to bottom, #ffff 0%, rgb(202, 202, 202) 100%);
     width: 75%;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -155,8 +159,9 @@ button {
 
 .button-article {
     display: flex;
-    align-items: end;
-    margin: 1rem 1rem 3rem 0;
+    flex-direction: row;
+    justify-content: end;
+    margin: 0 0 3rem 0;
 }
 
 .title {
@@ -164,7 +169,73 @@ button {
     justify-content: center;
 }
 
-form {
+.login {
     display: flex;
     flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+input {
+    text-align: justify;
+    height: 2.5rem;
+    width: 13rem;
+    border: none;
+    background-color: #ffffff00;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 1rem;
+}
+
+.inputs img {
+    width: 2rem;
+}
+
+.img {
+    display: flex;
+    margin: 0 0 0 1.5rem;
+}
+
+.img1 {
+    display: flex;
+    margin: 0 1.5rem 0 0;
+}
+
+.input1, .input2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff77;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.input2 input{
+    width: 9.5rem;
+}
+
+.input-p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0 1rem 0 1rem;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox input {
+    width: 1rem;
 }
